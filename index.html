@@ -210,7 +210,7 @@
 
   <!-- WhatsApp form yönlendirme -->
   <script>
-    const PHONE = "+905377171592"; // ← ← BURAYA SADECE RAKAM OLARAK TELEFONUNU YAZ (başında 90 ile)
+    const PHONE = "905377171592"; // ← ← BURAYA SADECE RAKAM OLARAK TELEFONUNU YAZ (başında 90 ile)
     document.querySelectorAll('a[href^="tel:+905377171592"]').forEach(a=>a.href = "tel:+"+PHONE);
     document.querySelectorAll('a[href*="wa.me/+905377171592"]').forEach(a=>{
       a.href = a.href.replace("+905377171592", PHONE);
@@ -246,5 +246,6 @@
 
 </body>
 </html>
+
 
 
