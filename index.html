@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>İSAK AKPINAR • Lİİ NAKLİYAT | Sancaktepe Evden Eve Şehir İçi/Şehir Dışı</title>
+  <meta name="description" content="Lİİ Nakliyat: Sancaktepe ve yakın çevrede güvenilir evden eve, ofis, parça eşya, asansörlü taşıma. Aynı gün hızlı hizmet. Ücretsiz keşif.">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="icon" href="data:,">
+  <style>
+    :root{
+      --max:1100px; --pad:20px;
+      --bg:#ffffff; --ink:#111; --muted:#666; --line:#eee; --brand:#0d6efd; --brand-ink:#fff;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);line-height:1.6}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+    header{padding:18px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:10}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:800}
+    .brand-badge{width:34px;height:34px;border-radius:8px;background:var(--brand);display:grid;place-items:center;color:#fff}
+    nav{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    nav a{color:var(--ink);text-decoration:none;font-weight:600}
+    .hero{padding:60px 0;border-bottom:1px solid var(--line)}
+    .hero h1{font-size:clamp(28px,5vw,42px);margin:0 0 6px}
+    .hero p{margin:0;color:var(--muted);font-size:18px}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .badge{border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:14px;background:#fff}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{padding:12px 16px;border-radius:12px;text-decoration:none;border:1px solid var(--line);background:#fff}
+    .btn.primary{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+    section{padding:50px 0;border-bottom:1px solid var(--line)}
+    h2{margin:0 0 12px;font-size:28px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff}
+    .card h3{margin:0 0 6px;font-size:18px}
+    ul.tick{list-style:none;padding:0;margin:0}
+    ul.tick li{padding-left:26px;position:relative;margin:6px 0}
+    ul.tick li:before{content:"✓";position:absolute;left:0;top:0;color:green;font-weight:800}
+    .notice{background:#f8f9ff;border:1px solid #dfe6ff;padding:12px 14px;border-radius:12px}
+    .cols{display:grid;grid-template-columns:1.2fr 1fr;gap:20px}
+    @media (max-width:900px){.cols{grid-template-columns:1fr}}
+    footer{padding:34px 0;text-align:center;color:var(--muted)}
+    .small{font-size:14px;color:var(--muted)}
+  </style>
+</head>
+<body>
+
+  <!-- Üst Menü -->
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">
+          <div class="brand-badge">L</div>
+          <span>Lİİ NAKLİYAT</span>
+        </div>
+        <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+          <a href="#hizmetler">Hizmetler</a>
+          <a href="#bolgeler">Hizmet Bölgeleri</a>
+          <a href="#iletisim">İletişim</a>
+          <a class="btn primary" href="tel:+90XXXXXXXXXX">Hemen Ara</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <h1>İSAK AKPINAR — Lİİ NAKLİYAT</h1>
+          <p>Sancaktepe ve yakın çevrede <strong>şehir içi</strong> ve <strong>şehir dışı</strong> profesyonel nakliyat. <strong>Ücretsiz keşif</strong>, <strong>zamanında teslim</strong>, <strong>sigortalı taşıma</strong>.</p>
+          <div class="badges">
+            <span class="badge">Evden Eve</span>
+            <span class="badge">Ofis Taşıma</span>
+            <span class="badge">Parça Eşya</span>
+            <span class="badge">Asansörlü Taşıma</span>
+            <span class="badge">Ambalajlama</span>
+          </div>
+          <div class="cta">
+            <a class="btn primary" href="tel:+90XXXXXXXXXX">📞 Şimdi Ara</a>
+            <a class="btn" href="https://wa.me/90XXXXXXXXXX?text=Merhaba%2C%20nakliyat%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">💬 WhatsApp</a>
+          </div>
+          <p class="small">Çalışma saatleri: 07:00–23:00 • Aynı gün hızlı hizmet</p>
+        </div>
+        <div>
+          <div class="card notice">
+            <strong>Hızlı Teklif Al</strong>
+            <form onsubmit="sendWhatsApp(event)">
+              <label>Çıkış Adresi<br><input required style="width:100%;padding:10px;border:1px solid #ddd;border-radius:10px" name="from" placeholder="Örn: Sancaktepe, Abc Mah." /></label><br><br>
+              <label>Varış Adresi<br><input required style="width:100%;padding:10px;border:1px solid #ddd;border-radius:10px" name="to" placeholder="Örn: Ümraniye / İzmit / Ankara" /></label><br><br>
+              <label>Tarih<br><input type="date" required style="width:100%;padding:10px;border:1px solid #ddd;border-radius:10px" name="date" /></label><br><br>
+              <label>Not (opsiyonel)<br><textarea style="width:100%;padding:10px;border:1px solid #ddd;border-radius:10px" name="note" placeholder="Oda sayısı, asansör var mı, paketleme ister misiniz?"></textarea></label><br><br>
+              <button class="btn primary" style="width:100%">WhatsApp’tan Gönder</button>
+              <p class="small">Form bilgilerin WhatsApp mesajı olarak açılır — göndererek bize ulaşırsın.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hizmetler -->
+  <section id="hizmetler">
+    <div class="wrap">
+      <h2>Hizmetler</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Evden Eve Nakliyat</h3>
+          <ul class="tick">
+            <li>Ücretsiz keşif ve planlama</li>
+            <li>Mobilya sökme–montaj, eşyaya özel ambalaj</li>
+            <li>Sigortalı taşıma, zamanında teslim</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Ofis & Mağaza Taşıma</h3>
+          <ul class="tick">
+            <li>Minimum iş kaybı için hızlı kurulum</li>
+            <li>Kablolama/ekipman güvenliği</li>
+            <li>Hafta sonu ve mesai dışı hizmet</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Parça Eşya & Tek Parça</h3>
+          <ul class="tick">
+            <li>Bütçe dostu ortak taşıma</li>
+            <li>Beyaz eşya, mobilya, koliler</li>
+            <li>Aynı gün teslim seçenekleri</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Asansörlü Taşıma</h3>
+          <ul class="tick">
+            <li>Yüksek katlarda güvenli taşıma</li>
+            <li>Bina ortak alanlarını koruma</li>
+            <li>Daha kısa sürede teslim</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bölgeler -->
+  <section id="bolgeler">
+    <div class="wrap">
+      <h2>Sancaktepe ve Yakın Çevre</h2>
+      <p>Sancaktepe merkezli hizmet; <strong>Çekmeköy, Ümraniye, Ataşehir, Kartal, Sultanbeyli, Pendik</strong> ve çevre ilçeler — ayrıca <strong>şehir dışı</strong> (Kocaeli, Ankara, Bursa, İzmir, Eskişehir…)</p>
+      <div class="card">
+        <strong>Neden Lİİ Nakliyat?</strong>
+        <ul class="tick" style="margin-top:8px">
+          <li>Yerel deneyim: Sancaktepe ve çevre sokak–site dinamiklerini biliyoruz</li>
+          <li>Şeffaf fiyat: Sürpriz ücret yok, net teklif</li>
+          <li>Temiz ekipman ve koruyucu ambalaj kullanımı</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SSS -->
+  <section id="sss">
+    <div class="wrap">
+      <h2>Sık Sorulanlar</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Fiyatı nasıl belirliyorsunuz?</h3>
+          <p>Mesafe, kat durumu, asansör, oda sayısı ve paketleme ihtiyacına göre. Ücretsiz keşif ile net fiyat veriyoruz.</p>
+        </div>
+        <div class="card">
+          <h3>Paketleme yapıyor musunuz?</h3>
+          <p>Evet. Hassas eşyalar için balonlu naylon, battaniye, streç ve koli ile profesyonel paketleme yapıyoruz.</p>
+        </div>
+        <div class="card">
+          <h3>Sigorta var mı?</h3>
+          <p>Talebe bağlı eşya sigortası sunuyoruz. Değerli/parça eşyalar için ayrıca koruma uygulanır.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İletişim -->
+  <section id="iletisim">
+    <div class="wrap">
+      <h2>İletişim</h2>
+      <div class="grid">
+        <div class="card">
+          <p><strong>Telefon:</strong> <a href="tel:+90XXXXXXXXXX">+90 (XXX) XXX XX XX</a></p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/90XXXXXXXXXX" target="_blank" rel="noopener">Mesaj Gönder</a></p>
+          <p><strong>Merkez:</strong> Sancaktepe / İstanbul</p>
+          <p class="small">Hizmet Saatleri: 07:00–23:00 • Randevu ile 7/24</p>
+          <div class="cta">
+            <a class="btn primary" href="tel:+90XXXXXXXXXX">📞 Ara</a>
+            <a class="btn" href="https://wa.me/90XXXXXXXXXX?text=Merhaba%2C%20ta%C5%9F%C4%B1ma%20i%C3%A7in%20teklif%20almak%20istiyorum." target="_blank" rel="noopener">💬 WhatsApp</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Hızlı Not</h3>
+          <p>Taşınma tarihin, kat sayıları ve paketleme isteğini yazarsan 5 dakikada ön teklif döneriz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      © <span id="yil"></span> Lİİ NAKLİYAT — İSAK AKPINAR. Tüm hakları saklıdır.
+    </div>
+  </footer>
+
+  <!-- WhatsApp form yönlendirme -->
+  <script>
+    const PHONE = "90XXXXXXXXXX"; // ← ← BURAYA SADECE RAKAM OLARAK TELEFONUNU YAZ (başında 90 ile)
+    document.querySelectorAll('a[href^="tel:+90XXXXXXXXXX"]').forEach(a=>a.href = "tel:+"+PHONE);
+    document.querySelectorAll('a[href*="wa.me/90XXXXXXXXXX"]').forEach(a=>{
+      a.href = a.href.replace("90XXXXXXXXXX", PHONE);
+    });
+    function sendWhatsApp(e){
+      e.preventDefault();
+      const f = e.target;
+      const from = encodeURIComponent(f.from.value.trim());
+      const to   = encodeURIComponent(f.to.value.trim());
+      const date = encodeURIComponent(f.date.value);
+      const note = encodeURIComponent(f.note.value.trim());
+      const msg = `Merhaba, nakliyat için teklif almak istiyorum.%0A%0AÇıkış: ${from}%0AVarış: ${to}%0ATarih: ${date}%0ANot: ${note}`;
+      window.open(`https://wa.me/${PHONE}?text=${msg}`, "_blank");
+    }
+    document.getElementById('yil').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Yapılandırılmış veri (Google için) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MovingCompany",
+    "name": "Lİİ NAKLİYAT",
+    "areaServed": ["Sancaktepe","Çekmeköy","Ümraniye","Ataşehir","Kartal","Sultanbeyli","Pendik","İstanbul","Türkiye"],
+    "address": {"@type":"PostalAddress","addressLocality":"Sancaktepe","addressRegion":"İstanbul","addressCountry":"TR"},
+    "telephone": "+905377171592",
+    "url": "https://ornekalanadiniz.com",
+    "openingHours": "Mo-Su 07:00-23:00",
+    "priceRange": "₺₺",
+    "sameAs": []
+  }
+  </script>
+
+</body>
+</html>
