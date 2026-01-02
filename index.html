@@ -179,6 +179,94 @@ footer{
   .hero-grid{grid-template-columns:1fr}
   .hero h1{font-size:32px}
 }
+  .hero-visual {
+  background: linear-gradient(
+      rgba(0,74,173,0.75),
+      rgba(0,74,173,0.75)
+    ),
+    url("https://images.unsplash.com/photo-1601584115197-04ecc0da31d8");
+  background-size: cover;
+  background-position: center;
+  padding: 90px 0;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero-visual h1 {
+  font-size: 46px;
+  margin-bottom: 15px;
+}
+
+.hero-visual p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero-phone {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: #fff;
+  color: #004aad;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #ffcc00;
+  color: #000;
+}
+
+.diamonds {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.diamond {
+  width: 140px;
+  height: 140px;
+  transform: rotate(45deg);
+  overflow: hidden;
+  border: 4px solid #fff;
+  transition: transform 0.3s;
+}
+
+.diamond img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(-45deg) scale(1.2);
+}
+
+.diamond:hover {
+  transform: rotate(45deg) scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
 </style>
 </head>
 
@@ -196,31 +284,39 @@ footer{
   </div>
 </header>
 
-<section class="hero">
-  <div class="wrap hero-grid">
+<section class="hero-visual">
+  <div class="hero-content">
+
     <div>
-      <h1>İSAK AKPINAR — Lİİ NAKLİYAT</h1>
-      <p>İstanbul Anadolu & Avrupa Yakası evden eve nakliyat. Ücretsiz keşif, sigortalı ve güvenli taşıma.</p>
-      <div class="badges">
-        <span>Evden Eve</span><span>Ofis Taşıma</span><span>Parça Eşya</span><span>Asansörlü</span>
+      <h1>Türkiye’nin Güvenilir<br>Evden Eve Nakliyat Firması</h1>
+      <p>
+        Lii Nakliyat olarak İstanbul <strong>Anadolu ve Avrupa Yakası</strong> başta olmak üzere  
+        şehir içi ve şehirler arası profesyonel taşımacılık hizmeti sunuyoruz.
+      </p>
+
+      <div class="hero-phone">📞 0 (537) 717 15 92</div>
+
+      <a class="hero-btn" href="tel:+905377171592">Hemen Teklif Al</a>
+    </div>
+
+    <div class="diamonds">
+      <div class="diamond">
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7">
       </div>
-      <div class="cta">
-        <a class="btn primary" href="tel:+905377171592">📞 Şimdi Ara</a>
-        <a class="btn" target="_blank" href="https://wa.me/905377171592?text=Merhaba%20nakliyat%20için%20bilgi%20almak%20istiyorum">💬 WhatsApp</a>
+      <div class="diamond">
+        <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e">
+      </div>
+      <div class="diamond">
+        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427">
+      </div>
+      <div class="diamond">
+        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d">
       </div>
     </div>
 
-    <div class="card">
-      <h3>Hızlı Teklif Al</h3>
-      <form onsubmit="sendWA(event)">
-        <input required placeholder="Çıkış adresi">
-        <input required placeholder="Varış adresi">
-        <input type="date" required>
-        <textarea placeholder="Oda sayısı, asansör vb."></textarea>
-        <button class="btn primary">WhatsApp’tan Gönder</button>
-      </form>
-    </div>
   </div>
+</section>
+
 </section>
 
 <section id="hizmetler">
@@ -265,6 +361,7 @@ document.getElementById("yil").textContent=new Date().getFullYear();
 
 </body>
 </html>
+
 
 
 
